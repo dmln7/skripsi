@@ -1,0 +1,89 @@
+\PassOptionsToPackage{table}{xcolor}
+\documentclass{SkripsiUnesa}
+\loadglsentries{Istilah.tex}
+
+\begin{document}
+
+\input{DataSkripsi}
+
+\Awal
+\HalamanJudul
+\SampulDalam
+
+%Abstrak
+\begin{Abstrak}
+	
+Perekonomian merupakan suatu bidang yang perlu mendapat perhatian di semua negara, baik negara maju maupun berkembang. Berbagai tantangan dan risiko masih membayangi perkembangan ekonomi global, terutama berasal dari inflasi yang terjadi di mayoritas negara-negara dunia. Pada proses perkembangan ekonomi, minyak mentah menjadi salah satu komoditas paling penting. Harga minyak mentah memiliki pengaruh yang signifikan terhadap perekonomian global. Hal ini dikarenakan kenaikan harga minyak akan meningkatkan biaya produksi, sehingga harga produk meningkat. Harga produk yang tinggi menyebabkan stagnansi pasar. Oleh karena itu, pemahaman berkelanjutan tentang pergerakan harga minyak mentah dunia penting untuk pengembangan dan pertumbuhan ekonomi. Salah satu model yang dapat digunakan dalam memprediksi pergerakan harga minyak ada lah \textit{Geometric Brown Motion} termodifikasi kalman filter. Dalam penelitian ini metode yang digunakan adalah \textit{Geometric Brown Motion} dan \textit{Geometric Brown Motion} termodifikasi kalman filter. Metode tersebut digunakan untuk memprediksi data harga minyak mentah per barel jenis \textit{West Texas Intermediate} dan \textit{brent}. Hasil dari penilitian ini menunjukkan bahwa metode \textit{Geometric Brown Motion} termodifikasi kalman filter	menghasilkan MAPE sebessar 1,108889\% untuk minyak mentah jenis West Texas Intermediate dan 1,097598\% untuk minyak mentah jenis \textit{brent}. MAPE tersebut lebih kecil dari lintasan terbaik \textit{Geometric Brown Motion} yang menghasilkan MAPE sebesar 2,562672\% untuk minyak mentah jenis West Texas Intermediate dan 2,537235\% untuk minyak mentah jenis \textit{brent}. Kedua metode tersebut menghasilkan MAPE $<$ 10\%	yang mengindikasikan bahwa kedua metode tersebut mempunyai tingkat akurasi peramalan yang tinggi untuk kasus ini.
+	\katakunci{Minyak mentah, \textit{Geometric Brownian Motion}, Kalman Filter}
+l\end{Abstrak}
+\newpage
+
+%Abstrak dalam Bahasa Inggris
+\begin{Abstract}
+	
+Ebola is a deadly infectious disease, caused by the ebola virus from the family of Filoviridae, and genus Ebolavirus. Most of the transmission to humans is caused by animals or carcasses of infected animals, such as gorillas, monkeys, chimpanzees, bats and others. This virus can also be spread through sexual contact with the patient.
+	
+This study aims to reconstruct a mathematical model of the spreading of the Ebola virus with combinations of sexual and non-sexual transmission routes based on the SIR-SI epidemic model. The population within a community consists of the human population and the bat population. In the human population, it is divided into three cases, namely the vulnerable human population, the infected human population and the healed human population. Whereas, there are only two in the bat population that is the population of vulnerable bats and the population of infected bats. Infected humans can spread the virus to vulnerable humans through sexual intercourse.
+\keywords{Stability analysis, Ebola virus, compartment diagram, the equilibrium point, linearization}
+\end{Abstract}
+
+\SuratPernyataan
+%-------------------------------
+\HalamanPersetujuan %digunakan untuk sidang skripsi
+\HalamanPengesahan %digunakan untuk buku skripsi A5
+
+\Prakata
+
+Proses penciptaan karya ini merupakan kolaborasi tak kasat mata. Ada sumber-sumber yang menjadi pijakan, namun ide yang dihasilkan merupakan akumulasi dari berbagai perspektif yang bersinggungan. Ada berbagai sumber inspirasi yang tak terhitung dan karya ini adalah output dari sintesis tersebut. Oleh karena itu, terima kasih pada semua yang sudah membersamai penulis dalam penciptaan karya ini. karya ini disajikan dengan semangat apa adanya. Ia tak berpretensi menjadi sumber kebenaran tunggal, namun lebih sebagai jembatan untuk memicu pemikiran kritis. Terkadang, penemuan terbesar muncul dari interpretasi yang tak terduga.
+
+\DaftarIsi
+\DaftarTabel
+\DaftarGambar
+\DaftarSimbol
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{p{0.1\textwidth} p{0.8\textwidth}}
+	$m$ & Massa\\
+	$p$ & Momentum\\
+	$F$ & Gaya\\
+	$\ax{\angln i}[\left(m\right)]$ & Nilai sekarang anuitas biasa (anuitas-\textit{immediate})\\
+	$\ax**{\angln i}[\left(m\right)]$ & Nilai sekarang anuitas jatuh tempo (anuitas-\textit{due})\\
+	$i^{(m)}$ & Tingkat bunga nominal tahunan yang dikapitalisasi $m$ kali dalam setahun\\
+	$d^{(m)}$ & Tingkat diskonto nominal tahunan yang dikapitalisasi $m$ kali dalam setahun\\
+	$v$ & Faktor diskonto (\textit{discount factor})\\
+	$\amalg$ & Amalgamasi\\
+	$\Re$ & Bagian real dari bilangan kompleks\\
+	$\Im$ & Bagian imajiner dari bilangan kompleks 
+\end{tabular}
+\newpage
+
+\Inti
+
+\include{Bab_1/Pendahuluan}
+
+\include{Bab_2/KajianPustaka}
+
+\include{Bab_3/MetodePenelitian}
+
+\include{Bab_4/HasilPenelitian}
+
+\include{Bab_5/Simpulan}
+
+\nocite{*}
+
+\DaftarPustaka{Pustaka}
+\Glosarium
+\BukaLampiran
+
+\lampiran{Surat Keterangan Uji Ahli} %gunakan ini jika memerlukan keterangan uji ahli, misal kuesioner
+\UjiAhli
+
+\lampiran{\textit{Source code}}
+\lstinputlisting[language=python]{epidemiology.py}
+
+\lampiran{Biodata Penulis}
+\biodata{Gambar/foto}
+Ryan took part in the BBC series Strictly Come Dancing. He was partnered with professional dancer Nadiya Bychkova and was the second contestant to be eliminated on 7 October 2018. In 2019, Ryan starred in Celebs Go Dating on E4 and released his first single after nine years called "Ghost". Ryan subsequently released two further solo singles in 2020, "Mockingbirds" and Swayed".
+
+Ryan reunited with Blue in 2011 and in 2022 they released singles "Haven't Found You Yet" and "Dance with Me" from their sixth studio album Heart \& Soul.
+
+\end{document}
